@@ -128,3 +128,58 @@ header {
     color:black;
 }
 
+/** Style for Shopping Cart**/
+
+.text-center{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.HomeBtn{
+    background-color: #212529;
+    color:#fff;
+    border: none;
+    padding: 7px;
+    border-radius: 4p;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bi-x-lg{
+    color:#212529;
+    font-weight: bold;
+}
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.cart-item{
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+}
+
+.ittle-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tittle-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background: #212529;
+    color:#fff;
+    border: 4px;
+    padding:3px 6px
+}
