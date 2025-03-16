@@ -90,7 +90,11 @@ else {
 let update = (id)=>{
     let search = basket.find((x) =>x.id ===id )
        document.getElementById(id).innerHTML = search.item;
-       calculation()
+       calculation();
 };
 
-let removeItem =(id)=>{}
+let removeItem =(id)=>{
+    let selectedItem = id;
+    basket=basket.filter((x) => x.id !== selectedItem.id);
+    localStorage.setItem("data", JSON.stringify(basket));
+};
